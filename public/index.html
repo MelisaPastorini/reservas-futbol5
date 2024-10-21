@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Canchas</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+    <!-- Agregar la imagen del banner -->
+    <img src="../public/images/bannerPrincipal.png" alt="Banner Principal">
+
+    <h1>Reserva de Canchas de Fútbol 5</h1>
+
+    <!-- Calendario -->
+    <div id="calendario-container">
+        <button id="prev-week">Semana Anterior</button>
+        <button id="next-week">Semana Siguiente</button>
+
+        <table id="calendario">
+            <!-- El contenido del calendario se generará dinámicamente -->
+        </table>
+
+        <!-- Referencia de colores -->
+        <div id="color-reference">
+            <span class="available">Disponible</span>
+            <span class="unavailable">No Disponible</span>
+            <span class="no-service">Fuera de Servicio</span>
+        </div>
+
+    </div>
+
+    <!-- Formulario de reserva de canchas -->
+    <form id="reservaForm" method="POST">
+
+        <!-- Para ingresar el correo -->
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required >
+        
+        <!-- Para seleccionar la cancha -->
+        <label for="cancha">Cancha:</label>
+        <select id="cancha" name="cancha" required >
+            <option value="1">Cancha 1</option>
+            <option value="2">Cancha 2</option>
+            <option value="3">Cancha 3</option>
+            <option value="4">Cancha 4</option>
+            <option value="5">Cancha 5</option>
+            <option value="6">Cancha 6</option>
+            <option value="7">Cancha 7</option>
+            <option value="8">Cancha 8</option>
+            <option value="9">Cancha 9</option>
+            <option value="10">Cancha 10</option>
+        </select>
+        
+        <!-- Para seleccionar la fecha -->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required >
+        
+        <!-- Para seleccionar la hora -->
+        <label for="hora">Hora:</label>
+        <select id="hora" name="hora" required >
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="22:00">22:00</option>
+            <option value="23:00">23:00</option>
+        </select>
+        
+        <!-- Botón para reservar -->
+        <button type="submit">Reservar</button>
+    </form>
+    
+    <!-- Mensaje de éxito -->
+    <div id="mensaje-exito" style="display: none;"></div>
+    
+    <!-- Mensaje de error -->
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

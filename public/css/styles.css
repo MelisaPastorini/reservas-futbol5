@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Paleta de colores */
+:root {
+    --lima: #78c718;
+    --kangaroo: #c2c6bd;
+    --christi: #459a0f;
+    --green-house: #225f0e;
+    --gordons-green: #050904;
+    --stack: #8c8d8b;
+    --storm-dust: #666860;
+    --heavy-metal: #333431;
+    --ship-gray: #3f3b44;
+    --dusty-gray: #9c8c8c;
+    --red: #ff0000;
+}
+
+/* Cuerpo */
+body {
+    font-family: Arial, sans-serif;     /* Fuente */
+    background-color: var(--kangaroo);  /* Fondo gris claro */
+}
+
+/* Banner */
+img {
+    width: 70%;     /* Ocupa el 70% del ancho de la página */
+    display: block; /* Hace que el elemento sea un bloque */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+
+/* Titulo 1 */
+h1 {
+    text-align: center;         /* Centra el texto */
+    color: var(--green-house);  /* Color verde oscuro */
+}
+
+/* Formulario */
+form {
+    max-width: 400px;                       /* Ancho máximo */
+    margin: 0 auto;                         /* Centra el formulario */
+    padding: 1em;                           /* Espaciado interno */
+    border: 1px solid var(--green-house);   /* Borde verde oscuro */
+    border-radius: 1em;                     /* Bordes redondeados */
+    background-color: var(--kangaroo);      /* Fondo gris claro */
+}
+
+/* Etiquetas */
+label {
+    margin-top: 1em;            /* Espaciado superior */
+    display: block;             /* Hace que el elemento sea un bloque */
+    color: var(--green-house);  /* Color verde oscuro */
+}
+
+/* Entradas, Selecciones, Botones */
+input, select, button {
+    width: 100%;                            /* Ocupa todo el ancho */
+    padding: 0.5em;                         /* Espaciado interno */
+    margin-top: 0.5em;                      /* Espaciado superior */
+    border: 1px solid var(--green-house);   /* Borde verde oscuro */
+    border-radius: 0.5em;                   /* Bordes redondeados */
+    background-color: var(--kangaroo);      /* Fondo gris claro */
+    color: var(--green-house);              /* Texto verde oscuro */
+}
+
+/* Botón de Enviar */
+button {
+    background-color: var(--lima);  /* Fondo verde lima */
+    color: var(--gordons-green);    /* Texto verde muy oscuro */
+    cursor: pointer;                /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: var(--christi); /* Fondo verde más oscuro al pasar el cursor */
+}
+
+/* Calendario */
+#calendario-container {
+    max-width: 800px;   /* Ancho máximo */
+    margin: 2em auto;   /* Centra el contenedor del calendario */
+    text-align: center; /* Centra el texto */
+}
+
+#calendario {
+    width: 100%;                /* Ocupa todo el ancho */
+    border-collapse: collapse;  /* Fusiona los bordes de las celdas */
+}
+
+#calendario th, #calendario td {
+    border: 1px solid var(--green-house);   /* Borde verde oscuro */
+    padding: 0.2em;                         /* Reducir el padding para hacer las celdas más bajas */
+    text-align: center;                    /* Centra el texto */
+}
+
+#calendario th {
+    background-color: var(--green-house);   /* Fondo verde oscuro */
+    color: var(--kangaroo);                 /* Texto gris claro */
+}
+
+#calendario td {
+    height: 30px;   /* Reducir la altura de las celdas */
+}
+
+#calendario .no-service {
+    background-color: var(--storm-dust); /* Fondo gris */
+}
+
+#calendario .available {
+    background-color: var(--lima); /* Fondo verde */
+}
+
+#calendario .unavailable {
+    background-color: var(--red); /* Fondo rojo */
+}
+
+/* Referencia de colores */
+#color-reference {
+    margin-top: 1em;    /* Espaciado superior */
+}
+
+#color-reference span {
+    display: inline-block;  /* Hace que el elemento sea un bloque */
+    margin-right: 1em;      /* Espaciado derecho */
+    padding: 0.2em 0.5em;   /* Espaciado interno */
+    border-radius: 0.5em;   /* Bordes redondeados */
+}
+
+#color-reference .available {
+    background-color: var(--lima);  /* Fondo verde lima */
+    color: var(--gordons-green);    /* Texto verde muy oscuro */
+}
+
+#color-reference .unavailable {
+    background-color: var(--red);    /* Fondo rojo */
+    color: var(--gordons-green);    /* Texto verde muy oscuro */
+}
+
+#color-reference .no-service {
+    background-color: var(--storm-dust);    /* Fondo gris */
+    color: var(--gordons-green);            /* Texto verde muy oscuro */
+}
+
+/* Mensaje de éxito */
+#mensaje-exito {
+    max-width: 400px;                       /* Ancho máximo */
+    margin: 2em auto;                       /* Centra el mensaje */
+    padding: 1em;                           /* Espaciado interno */
+    border: 1px solid var(--green-house);   /* Borde verde oscuro */
+    border-radius: 1em;                     /* Bordes redondeados */
+    background-color: var(--kangaroo);      /* Fondo gris claro */
+    color: var(--green-house);              /* Texto verde oscuro */
+    text-align: center;                     /* Centra el texto */
+}
